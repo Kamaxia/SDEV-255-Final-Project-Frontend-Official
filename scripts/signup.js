@@ -53,7 +53,7 @@ document.getElementById("student-signup").addEventListener("submit", async funct
 
     if (isValid) {
         try {
-            const response = await fetch("http://localhost:3000/auth/signup/student", {
+            const response = await fetch("https://quick-fuchsia-feverfew.glitch.me/auth/signup/student", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -142,7 +142,7 @@ document.getElementById("teacher-signup").addEventListener("submit", async funct
 
     if (isValid) {
         try {
-            const response = await fetch("http://localhost:3000/auth/signup/teacher", {
+            const response = await fetch("https://quick-fuchsia-feverfew.glitch.me/auth/signup/teacher", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

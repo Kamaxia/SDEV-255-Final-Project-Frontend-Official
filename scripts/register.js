@@ -3,7 +3,7 @@ window.onload = () =>{
 }
 
 async function getClass(){
-    let response = await fetch("http://localhost:3000/register")
+    let response = await fetch("https://quick-fuchsia-feverfew.glitch.me/register")
     let data = await response.json()
     console.log(data)
     document.getElementById("classTitle").innerText = data.classes[0].title

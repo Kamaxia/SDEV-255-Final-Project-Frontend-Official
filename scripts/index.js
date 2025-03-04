@@ -3,7 +3,7 @@ window.onload = () => {
 }
 
 async function serveData(){
-    let response = await fetch("http://localhost:3000/register")
+    let response = await fetch("https://quick-fuchsia-feverfew.glitch.me/register")
     let data = await response.json()
     //grabbing the places for the classes from the html
     let trendClass1 = document.getElementById('trendClass1')

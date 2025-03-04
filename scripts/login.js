@@ -30,7 +30,7 @@ async function login(email, password) {
     document.querySelector("#errorMsg").innerHTML = "";
 
     // Make the login request
-    const response = await fetch("http://localhost:3000/auth/login", {
+    const response = await fetch("https://quick-fuchsia-feverfew.glitch.me/auth/login", {
         method: "POST",
         body: new URLSearchParams({
             email: email,
